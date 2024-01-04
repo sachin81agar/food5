@@ -1,0 +1,182 @@
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+      width: 60%;
+    }
+
+    .search-input {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-right: none;
+      outline: none;
+    }
+
+    .search-button {
+      width: 20%;
+      padding: 10px;
+      border: none;
+      background-color: #ff9900;
+      color: white;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .menu-item {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .menu-item:hover {
+      background-color: #ff9900;
+      color: white;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .card-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .card-rating {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 5px;
+    }
+
+    .card-price {
+      color: #ff9900;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .card-button {
+      padding: 10px;
+      border: none;
+      background-color: #ff9900;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="logo.png" alt="Logo" class="logo">
+      <div class="search">
+        <input type="text" placeholder="Search for food, cuisine, or restaurant" class="search-input">
+        <button class="search-button">Search</button>
+      </div>
+      <div class="menu">
+        <div class="menu-item">Delivery</div>
+        <div class="menu-item">Pickup</div>
+        <div class="menu-item">Cart</div>
+        <div class="menu-item">Profile</div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="card">
+        <img src="pizza.jpg" alt="Pizza" class="card-image">
+        <div class="card-info">
+          <div class="card-title">Pizza Margherita</div>
+          <div class="card-rating">⭐⭐⭐⭐⭐ (4.8)</div>
+          <div class="card-price">$12.99</div>
+          <button class="card-button">Order Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="sushi.jpg" alt="Sushi" class="card-image">
+        <div class="card-info">
+          <div class="card-title">Sushi Platter</div>
+          <div class="card-rating">⭐⭐⭐⭐ (4.2)</div>
+          <div class="card-price">$24.99</div>
+          <button class="card-button">Order Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="burger.jpg" alt="Burger" class="card-image">
+        <div class="card-info">
+          <div class="card-title">Cheeseburger</div>
+          <div class="card-rating">⭐⭐⭐⭐⭐ (4.9)</div>
+          <div class="card-price">$9.99</div>
+          <button class="card-button">Order Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="salad.jpg" alt="Salad" class="card-image">
+        <div class="card-info">
+          <div class="card-title">Caesar Salad</div>
+          <div class="card-rating">⭐⭐⭐⭐ (4.1)</div>
+          <div class="card-price">$7.99</div>
+          <button class="card-button">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
